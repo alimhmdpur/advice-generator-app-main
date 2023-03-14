@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Manrope', sans-serif;
+}
+.bg-img {
+    @media (min-width:1440px) {
+        background-image: url(../images/blue-concrete-textured-wall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5vh 5vw;
+        height: 100vh;
+    }
+    .bg-color {
+        background-color: hsl(218, 23%, 16%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width:1440px) {
+            height: 90vh;
+        }
+        .advice-cart {
+            font-family: 'Manrope', sans-serif;
+            background-color:hsl(217, 19%, 24%);
+            max-width: 35rem;
+            min-height: 10rem;
+            margin-right: 0;
+            margin-inline: 1rem;
+            border-radius: 10px;
+            padding: 2rem;
+            position: relative;
+            .row {
+                min-width: 100%;
+                .col-12 {
+                    .advice-counter {
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        color: hsl(150, 100%, 66%);
+                        font-size: 0.7rem;
+                        text-align: center;
+                        margin: 0 auto;
+                        #advice-id {
+                            display: inline-block;
+                        }
+                    }
+                }
+                .col-12 {
+                    .advice-p {
+                        text-align: center;
+                        color: hsl(193, 38%, 86%);
+                        font-weight: 800;
+                        font-size: clamp(1.3rem, 2.5vw, 1.8rem); 
+                        // #advice {
+                        //     display: inline-block;
+                        // }
+                    }
+                }
+                .col-12 {
+                    .img-advice {
+                        width: min(100%, 30rem);
+                        min-height: 0.8rem;
+                        // margin-bottom: 1.5rem;
+                    }
+                }
+                .btn-div {
+                    margin: 0 auto;
+                    // @media (max-width:440px) {
+                        max-height: 1rem;
+                        
+                    // }
+                    .next-btn {
+                        border: none;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        padding: 0.9rem;
+                        background-color:  hsl(150, 100%, 66%);
+                        position: relative;
+                        left: 43.5%;
+                        top: 1.4rem;
+                        img {
+                            &:hover {
+                                // transform: rotate(0.3turn);
+                            }
+                        }
+                        &:hover {
+                            box-shadow: (1px 1px 30px hsl(150, 100%, 66%));
+                            // filter: drop-shadow(1px 1px 10px hsl(150, 100%, 66%)) hue-rotate(360deg) drop-shadow(1px 1px 10px
+                            // hsl(150, 100%, 66%));
+                            transform: rotate(0.25turn);
+                            transition: 1s;
+                            // background-color: hsl(150, 100%, 96%);
+                        }
+                        // &:focus{
+                        //     transform: rotate(3turn);
+                        //     transition: 2.1s;
+                        // }
+                        @media (max-width:440px) {
+                            left: 40%;
+                            top: 1.3rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

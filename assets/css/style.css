@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width: 1440px) {
+  .bg-img {
+    background-image: url(../images/blue-concrete-textured-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 5vw;
+    height: 100vh;
+  }
+}
+.bg-img .bg-color {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .bg-img .bg-color {
+    height: 90vh;
+  }
+}
+.bg-img .bg-color .advice-cart {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(217, 19%, 24%);
+  max-width: 35rem;
+  min-height: 10rem;
+  margin-right: 0;
+  margin-inline: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+}
+.bg-img .bg-color .advice-cart .row {
+  min-width: 100%;
+}
+.bg-img .bg-color .advice-cart .row .col-12 .advice-counter {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(150, 100%, 66%);
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.bg-img .bg-color .advice-cart .row .col-12 .advice-counter #advice-id {
+  display: inline-block;
+}
+.bg-img .bg-color .advice-cart .row .col-12 .advice-p {
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+}
+.bg-img .bg-color .advice-cart .row .col-12 .img-advice {
+  width: min(100%, 30rem);
+  min-height: 0.8rem;
+}
+.bg-img .bg-color .advice-cart .row .btn-div {
+  margin: 0 auto;
+  max-height: 1rem;
+}
+.bg-img .bg-color .advice-cart .row .btn-div .next-btn {
+  border: none;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0.9rem;
+  background-color: hsl(150, 100%, 66%);
+  position: relative;
+  left: 43.5%;
+  top: 1.4rem;
+}
+.bg-img .bg-color .advice-cart .row .btn-div .next-btn:hover {
+  box-shadow: 1px 1px 30px hsl(150, 100%, 66%);
+  transform: rotate(0.25turn);
+  transition: 1s;
+}
+@media (max-width: 440px) {
+  .bg-img .bg-color .advice-cart .row .btn-div .next-btn {
+    left: 40%;
+    top: 1.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
